@@ -1,0 +1,73 @@
+body {
+    background-color: #9e9e9e;
+    font-family: Georgia, serif;
+    font-size: small;
+}
+/* 如果不设置 margin 的各个值 那一块会与浏览器的边缘有间距, 设置为 0 也不行 */
+#id-div-header {
+    position: relative;
+    background-color: #4a4848;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    height: 50px;
+}
+/* 垂直居中, 但不知道如何设置向右对齐, 如果设置整个的 header text-align: right, 只有图片移动 */
+#id-div-headerlink {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* 侧栏设置宽度, 高度由内容撑起来 */
+#id-div-sidebar {
+    background-color: white;
+    font-size: 105%;
+    padding: 15px;
+    margin: 0px 10px 10px 10px;
+    width: 300px;
+    float: right;
+}
+/* 侧栏里面的p用inline-block, 是因为要和input各占一行 */
+#id-div-sidebar p {
+    display: inline-block;
+    margin-right: 3px;
+}
+/* 输入框的提示文字, 要独占一行, 但是 不知道如何和 input 文本框对齐,  */
+.sidebar-tips {
+    display: block;
+    margin-right: 10px;
+    color: gray;
+}
+.main-articles {
+    font-size: 105%;
+    padding: 15px;
+    margin: -20px 330px 10px -10px;
+}
+.content {
+    width: 100px;
+    height: 120px;
+}
+.main-article {
+    margin-right: 10px;
+    background-color: white;
+}
+/* 设置图片样式, 文字和图片都要居中*/
+.main-article-pictures {
+    display: inline-block;
+    text-align: center;
+    border: 1px;
+    border-style: solid;
+    height: 150px;
+    width: 160px;
+}
+#id-div-footer {
+    background-color: black;
+    color: #efe5d0;
+    text-align: center;
+    padding: 15px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    font-size: 90%;
+    clear: right;
+}
