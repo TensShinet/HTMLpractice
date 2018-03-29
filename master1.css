@@ -3,56 +3,155 @@ body {
     font-family: Georgia, serif;
     font-size: small;
 }
-/* 如果不设置 margin 的各个值 那一块会与浏览器的边缘有间距, 设置为 0 也不行 */
+/* 使浏览器默认的, margin 和 padding 设置为 0 */
+* {
+    margin: 0;
+    padding: 0;
+}
 #id-div-header {
     position: relative;
     background-color: #4a4848;
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -10px;
     height: 50px;
 }
-/* 垂直居中, 但不知道如何设置向右对齐, 如果设置整个的 header text-align: right, 只有图片移动 */
 #id-div-headerlink {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
+    line-height: 50px;
+    float: right;
 }
 /* 侧栏设置宽度, 高度由内容撑起来 */
 #id-div-sidebar {
     background-color: white;
     font-size: 105%;
-    padding: 15px;
-    margin: 0px 10px 10px 10px;
-    width: 300px;
+    padding: 0;
+    margin: 10px 10px 10px 10px;
+    width: 321px;
     float: right;
 }
 /* 侧栏里面的p用inline-block, 是因为要和input各占一行 */
-#id-div-sidebar p {
-    display: inline-block;
-    margin-right: 3px;
+#id-div-sidebar h3 {
+    padding: 0;
+    margin: 10px 20px 10px 10px;
 }
-/* 输入框的提示文字, 要独占一行, 但是 不知道如何和 input 文本框对齐,  */
+/* 设置sidebar-mail下边距的时候不知道为什么没有反应 */
+.sidebar-mail {
+    margin: 10px 10px 60px 10px;
+    padding: 0;
+    clear: right;
+}
+.sidebar-mail p {
+    float: left;
+}
+.sidebar-mail input {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
 .sidebar-tips {
+    float: right;
     display: block;
-    margin-right: 10px;
     color: gray;
+}
+.sidebar-password-firstEnter {
+    clear: right;
+    padding: 0;
+    margin: 10px 10px 20px 10px;
+}
+.sidebar-password-firstEnter p {
+    float: left;
+    margin-left: 27px;
+}
+.sidebar-password-firstEnter input {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+.sidebar-password-repeate {
+    clear: right;
+    padding: 0px 0px 18px 0px;
+    margin: 80px 10px 20px 10px;
+}
+.sidebar-password-repeate p {
+    float: left;
+}
+.sidebar-password-repeate input {
+    float: right;
+    padding: 0;
+}
+.sidebar-gender {
+    clear: right;
+    margin: 10px 10px 10px 10px;
+}
+.sidebar-gender p {
+    display: inline-block;
+    margin-left: 68px;
+}
+.sidebar-gender-input {
+    margin-right: 105px;
+    float: right;
+}
+.sidebar-city {
+    clear: right;
+    padding: 0px 0px 10px 0px;
+    margin: 0px 10px 20px 10px;
+}
+.sidebar-city p {
+    display: inline-block;
+    float: left;
+    margin-left: 68px;
+}
+.sidebar-city input {
+    float: right;
+}
+.sidebar-habit {
+    clear: right;
+    padding: 0px 0px 5px 0px;
+    margin: 0px 10px 20px 10px;
+}
+.sidebar-habit p {
+    float: left;
+    margin-left: 68px;
+}
+.sidebar-habit-input {
+    float: right;
+    margin-right: 23px;
+}
+.sidebar-selfDescription {
+    clear: right;
+    margin: 10px 10px 10px 10px;
+}
+.sidebar-selfDescription p {
+    display: inline-block;
+    float: left;
+    margin-left: 39px;
+}
+.sidebar-selfDescription textarea {
+    height: 50px;
+    width: 155px;
+    float: right;
+    margin-right: 10px;
 }
 .main-articles {
     font-size: 105%;
-    padding: 15px;
-    margin: -20px 330px 10px -10px;
-}
-.content {
-    width: 100px;
-    height: 120px;
+    margin: 10px 343px 10px 10px;
 }
 .main-article {
-    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 10px;
     background-color: white;
 }
+.article-h1 {
+    padding: 10px 10px 10px 10px;
+}
+.article-h3 {
+    padding: 5px 10px 10px 10px;
+    color: #B0C4DE;
+}
+.artcle-author {
+    color: #C0C0C0;
+    padding-bottom: 5px;
+}
 /* 设置图片样式, 文字和图片都要居中*/
-.main-article-pictures {
+.article-picture {
     display: inline-block;
     text-align: center;
     border: 1px;
@@ -60,14 +159,45 @@ body {
     height: 150px;
     width: 160px;
 }
+.article-picture + .article-picture {
+    margin-left: 60px;
+}
+.article-picture-line + .article-picture-line {
+    margin-top: 10px;
+}
+.article-table {
+    width: 800px;
+    border: 1px dashed;
+}
+.article-table th {
+    padding-left: 2px;
+    padding-bottom: 2px;
+    color: white;
+    background-color: black;
+    text-align: left;
+}
+.article-table td {
+    padding-left: 2px;
+}
+.article-table td + td {
+    border-left: 1px dashed;
+}
+.table-bottomLine {
+    border-bottom: 1px dashed;
+}
+.table-lastLine {
+    background-color: gray;
+}
+.table-lastLine + .table-lastLine {
+    margin-left: 0;
+    border-left: 0;
+}
 #id-div-footer {
     background-color: black;
     color: #efe5d0;
     text-align: center;
     padding: 15px;
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin: 0;
     font-size: 90%;
     clear: right;
 }
