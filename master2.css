@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.div-background {
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+    height: 1386px;
+    background-color: white;
+    border: 1px black dashed;
+}
+.div-pageHeader {
+    margin-left: 44px;
+    width: 892px;
+    border-bottom: 2px solid #938e8c;
+}
+.div-pageHeader-itemHeader {
+    background-color: #f25353;
+    height: 61px;
+    width: 110px;
+}
+.div-pageHeader-itemHeader p {
+    display: inline-block;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 0;
+    margin-top: 42px;
+}
+.div-pageHeader-itemLast p {
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+    color: #d45d5c;
+    padding: 0;
+    margin-top: -19px;
+    float: right;
+}
+.div-main {
+    padding: 30px 0 30px 0;
+    margin-left: 44px;
+    width: 892px;div-pageFooter
+}
+.div-firstImg-text {
+    float: right;
+    width: 203px;
+    border-top: 2px solid #cc8091;
+}
+.firstImg-textFirst1 {
+    margin-top: 12px;
+}
+.firstImg-textFirst1 p {
+    text-decoration: underline;
+    font-size: 20px;
+}
+.firstImg-textFirst1 p:first-letter {
+    font-size: 24px;
+}
+.firstImg-textFirst2 {
+    color: #676767;
+    font-size: 12px;
+}
+.firstImg-textFirst3 {
+    font-size: 116px;
+    color: #75b86b;
+    font-style:oblique;
+    margin-left: -15px;
+    margin-top: -12px;
+}
+#firstImg-textFirst4-1 {
+    font-size: 55px;
+    color: #cc8091;
+}
+#firstImg-textFirst4-2 {
+    font-size: 21px;
+    color: #cc8091;
+    position: relative;
+    bottom: 13px;
+}
+#firstImg-textFirst4-3 {
+    font-size: 12px;
+    color: #676767;
+    position: relative;
+    left: -34px;
+}
+.div-introduce {
+    margin-top: 30px;
+    width: 641px;
+    /* 记得要去除这个边框 */
+    padding: 0 0 200px 0;
+    /* border: 1px solid #676767; */
+}
+.introduce-what {
+    float: left;
+    display: inline-block;
+    margin: 0px 45px 0px 0px;
+    width: 219px;
+    height: 200px;
+    /* border: 1px solid #676767; */
+    font-size: 12px;
+}
+.introduce-when {
+    float: left;
+    display: inline-block;
+    margin: 0px 40px 0px 0px;
+    width: 151px;
+    /* border: 1px solid #676767; */
+
+    font-size: 12px;
+}
+.introduce-how {
+    float: left;
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+    width: 170px;
+    /* border: 1px solid #676767; */
+
+    font-size: 12px;
+}
+.introduce-title {
+    font-size: 16px;
+    text-decoration: underline;
+    margin: 0px 0px 15px 0px;
+    display: inline-block;
+}
+.introduce-content {
+    display: inline-block;
+}
+.introduce-what .introduce-title {
+    color: #418459;
+}
+.introduce-when .introduce-title {
+    color: #d2994f;
+}
+.introduce-how .introduce-title {
+    color: #cc7680;
+}
+.introduce-ratio {
+    margin: 10px 0 0 0;
+}
+.introduce-ratio p  {
+    margin-top: 10px;
+}
+.introduce-ratio span {
+    font-size: 12px;
+    font-style: italic;
+    color: #cd4a48;
+}
+.div-pageFooter {
+    margin-left: 44px;
+    width: 892px;
+    padding-bottom: 660px;
+    border-bottom: 1px solid #938e8c;
+}
+.div-pageFooter-left {
+    float: left;
+    width: 471px;
+}
+.pageFooter-left-title {
+    border-bottom: 2px solid #11456b;
+    margin-bottom: 10px;
+}
+#titleFirsLine {
+    margin: 0 5px 0 0;
+    display: inline-block;
+    font-size: 72px;
+    color: #f5e327;
+    font-style: italic;
+}
+#titleFirsLine span {
+    display: inline-block;
+    margin-right: 1px;
+}
+#titleFirsLine > .titleRest {
+    display: inline-block;
+}
+.titleRest {
+    display: block;
+    font-size: 45px;
+    font-style: normal;
+    color: #11456b;
+}
+.titleRest + .titleRest {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+/* 这是为什么 */
+.div-contentFirst {
+    float: left;
+    font-size: 70px;
+    color: #f5e327;
+    margin: 0 10px 4px 0;
+}
+.div-textContent {
+    font-size: 12px;
+    color: #767777;
+}
+.div-textContent img {
+    float: right;
+    height: 280px;
+    width: 140px;
+    margin: 10px 0px 0px 5px;
+}
+.div-pageFooter-right {
+    float: right;
+}
+.pageFooter-rightHeader {
+    width: 410px;
+    height: 275px;
+    background-image: url(bg1.jpg);
+    background-size: 410px 275px;
+}
+.pageFooter-rightHeader-content {
+    display: inline-block;
+    font-size: 26px;
+    color: #ffffff;
+    margin-top: 234px;
+    margin-left: 20px;
+    padding-left: 10px;
+    border-left: 3px solid #72b16a;
+}
+.pageFooter-rightHeader-content span {
+    font-size: 12px;
+    color: #72b16a;
+    letter-spacing: 110%;
+    font-style: italic;
+}
+.pageFooter-rightFooter {
+    background-color: #FFFACD;
+    margin-top: 20px;
+    width: 410px;
+    height: 315px;
+}
+.rightFooter-line {
+    float: right;
+    padding-right: 60px;
+}
+.tri {
+    color: #6A5ACD;
+    display: inline-block;
+}
+.rightFooter-line > span {
+    font-size: 12px;
+    color: #5a5b5b;
+}
+.rightFooter-line {
+    margin-top: 20px;
+}
+.rightFooter-img1 {
+    margin-top: 20px;
+    background-color: #FF4500;
+    float: left;
+    width: 240px;
+    height: 173px;
+}
+.rightFooter-img1-content {
+    color: #ffffff;
+}
+.img1-content-first {
+    display: inline-block;
+    float: left;
+    margin-left: 20px;
+    font-size: 110px;
+    padding-right: 10px;
+}
+.img1-content-divide {
+    display: inline-block;
+    padding: 0;
+    margin: 34px 0 0 0;
+    height: 86px;
+    border-left: 2px #ffffff solid;
+}
+.img1-content-main {
+    display: inline-block;
+    font-size: 15px;
+    font-style: italic;
+    margin-left: 5px;
+}
+.img1-content-main2 {
+    display: inline-block;
+    font-size: 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.img1-content-main2 > p {
+    margin-top: 5px;
+}
+.rightFooter-img2 {
+    float: right;
+    font-size: 14px;
+    color: #5a5b5b;
+    margin: 50px 5px 10px 10px;
+}
+.rightFooter-img2 span {
+    display: inline-block;
+    font-size: 72px;
+    color: #d45d5c;
+    margin-bottom: 0;
+}
+.last {
+    font-size: 12px;
+    color: #d45d5c;
+    float: right;
+    margin-right: 44px;
+}
